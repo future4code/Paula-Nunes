@@ -1,32 +1,66 @@
 console.log("Oie, eu só sirvo pra saber se as coisas funcionaram!")
 
-//exercicio de interpretação
-//false
-//false
-//true
-//boolean
+//1 - a. false
+//1 - b. false
+//1 - c. false
+//1 - e. false
 
-const bool1 = true
-const bool2 = false
-const bool3 = !bool2
+//2 a. array
+//2 b. null
+//2 c. 11
+//2 d. 3
+//2 e. 19
+//2 f. 9
 
-let resultado = bool1 && bool2
-console.log("a. ", resultado)
+// exercicios de escrita
 
-resultado = bool1 && bool2 && bool3
-console.log("b. ", resultado)
+//1.
 
-resultado = !resultado && (bool1 || bool1)
-console.log("c. ", resultado)
+idade = Number(prompt("Qual a sua idade?"))
+idadeAmigo = Number(prompt("Qual a idade do seu melhor amigo?"))
 
-console.log("e. ", typeof resultado)
+const idadesIguais = idade == idadeAmigo
+const idadesMaior = idade > idadeAmigo
+conts idadesMenor = idade < idadeAmigo
 
-/*Como você faria para dar saudações diferentes para as pessoas, dependendo do gênero com a qual se identificam? 
-Ex.: Feminino → Bem-vinda; Masculino → Bem-vindo*/
+idade == idadeAmigo == false
+idade > idadeAmigo == true
+idade < idadeAmigo == false
 
-/*Como você faria para identificar se um número é par ou ímpar; e escrever no terminal:
- "este número é par" ou "este número é ímpar"?*/
+let resultado = idade > idadeAmigo
 
-/*Dados dois números a e b, como você faria para escrever as mensagens: "a é maior do que b"; 
-"b é maior do que a" ou "b é igual a a" (dependendo dos valores de a e b)?
-Escolhe um ficheiro ou arrasta para aqui Limite de tamanho: 10MB*/
+console.log("Sua idade é maior que a idade do seu amigo?", idade > idadeAmigo)
+
+
+//2.
+
+const par = Number(prompt("Digite um numero par: "))
+
+let resultado = par%2 == 0
+let naoResultado = par%2 != 0
+
+console.log("Ok, esse numero é par", resultado)
+console.log("Esse numero não é par", naoResutado)
+
+
+//3. 
+let listaDeTarefas = []
+listaDeTarefas.push(prompt("informe tarefa 0, que você precisa realizar?"))
+listaDeTarefas.push(prompt("informe tarefa 1, que você precisa realizar?"))
+listaDeTarefas.push(prompt("informe tarefa 2, que você precisa realizar?"))
+
+let indice = prompt("Digite o indice de umas tarefas que já realizou")
+let numeroIndice = Number(indice)
+listaDeTarefas.splice(indice,tarefas)
+
+console.log(listaDeTarefas)
+
+//4.
+
+let nomeDoUsuario = prompt("Qual o seu nome?")
+let emailDoUsuario = prompt("Qual o seu e-mail?")
+
+console.log("O e-mail", emailDoUsuario "foi cadastrado com sucesso.", "Seja bem-vinda(o)", nomeDoUsuario "!")
+
+
+
